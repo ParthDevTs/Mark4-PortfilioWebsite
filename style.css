@@ -62,23 +62,38 @@
 }
 
 .main {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  place-items: center;
 }
 
 section {
   padding: 2rem;
   max-width: 600px;
+  width: 100%;
 }
 section h3 {
   text-align: center;
   padding: 2rem;
 }
 
-section p {
+section ul {
   margin-bottom: 1rem;
+  color: cyan;
+}
+
+section p {
+  margin-bottom: 3rem;
+}
+
+.remove_margin {
+  margin-bottom: 0rem;
 }
 
 .ow {
@@ -95,6 +110,12 @@ section p {
   border-radius: 0.5rem;
   box-shadow: 0 0 0.5rem black;
   font-size: 0.8rem;
+  transition: all 200ms ease;
+}
+.see__buttons:hover {
+  background-color: rgb(1, 166, 172);
+  color: white;
+  box-shadow: 0 0 0.2rem black;
 }
 
 .footer {
