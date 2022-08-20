@@ -86,10 +86,34 @@ section h3 {
 section ul {
   margin-bottom: 1rem;
   color: cyan;
+  text-shadow: 0 0 0.8rem rgb(0, 153, 255);
 }
 
 section p {
   margin-bottom: 3rem;
+}
+
+.main__section {
+  margin-top: 2rem;
+  background-color: black;
+  color: white;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 1;
+  border: aqua 1px solid;
+}
+
+.main__section:after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 0 3rem black;
+  border: aqua 1px solid;
 }
 
 .remove_margin {
@@ -133,6 +157,16 @@ section p {
   display: flex;
   flex-direction: row;
   gap: 2rem;
+}
+
+.footer .social__media .social {
+  transition: all 150ms ease;
+}
+
+.footer .social__media .social:hover {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-shadow: white 0 0 0.8rem;
 }
 
 .footer .social__media .social {
