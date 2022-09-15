@@ -71,12 +71,15 @@
   grid-template-columns: 1fr;
   gap: 2rem;
   place-items: center;
+  /* padding: 0.5rem; */
 }
 
 section {
-  padding: 2rem;
-  max-width: 600px;
-  width: 100%;
+  padding: 0 1rem 2rem 1rem;
+  min-width: 350px;
+  max-width: 400px;
+  font-size: 0.7rem;
+  margin: auto;
 }
 section h3 {
   text-align: center;
@@ -84,9 +87,12 @@ section h3 {
 }
 
 section ul {
+  margin: unset;
+  padding: unset;
   margin-bottom: 1rem;
   color: cyan;
   text-shadow: 0 0 0.8rem rgb(0, 153, 255);
+  list-style: none;
 }
 
 section p {
@@ -135,6 +141,7 @@ section p {
   box-shadow: 0 0 0.5rem black;
   font-size: 0.8rem;
   transition: all 200ms ease;
+  cursor: pointer;
 }
 .see__buttons:hover {
   background-color: rgb(1, 166, 172);
