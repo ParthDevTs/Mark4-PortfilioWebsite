@@ -221,6 +221,10 @@ section .aboutme {
   font-weight: bold;
 }
 
+.audiophile {
+  color: aqua;
+}
+
 @media screen and (min-width: 700px) {
   section {
     font-size: 0.8rem;
