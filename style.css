@@ -81,16 +81,6 @@ section {
   font-size: 0.6rem;
 }
 
-@media screen and (min-width: 700px) {
-  section {
-    font-size: 0.8rem;
-    width: 600px;
-    padding: 3rem;
-  }
-  section h3 {
-    font-size: 1rem;
-  }
-}
 section h3 {
   text-align: center;
   padding: 2rem;
@@ -107,6 +97,29 @@ section ul {
 
 section p {
   margin-bottom: 3rem;
+}
+
+section .aboutme {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  place-content: center;
+}
+.aboutme p {
+  display: grid;
+  place-content: center;
+  height: 100%;
+}
+.img__container {
+  background: rgba(0, 0, 0, 0.363) url("assets/headphones.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 10rem;
+  border-radius: 50%;
+  background-blend-mode: multiply;
+  border: white 1px solid;
+  box-shadow: 0 0 2rem white;
 }
 
 .main__section {
@@ -133,6 +146,19 @@ section p {
   border-radius: 1rem;
   box-shadow: 0 0 3rem black;
   border: aqua 1px solid;
+}
+
+.tech_stack {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  place-content: center;
 }
 
 .remove_margin {
@@ -196,4 +222,23 @@ section p {
 
 .technologies {
   font-weight: bold;
+}
+
+@media screen and (min-width: 700px) {
+  section {
+    font-size: 0.8rem;
+    width: 600px;
+    padding: 3rem;
+  }
+  section h3 {
+    font-size: 1rem;
+  }
+
+  section .aboutme {
+    gap: 5rem;
+  }
+
+  .img__container {
+    height: 15rem;
+  }
 }
