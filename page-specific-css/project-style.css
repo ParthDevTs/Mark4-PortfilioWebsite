@@ -18,3 +18,9 @@
 section > p {
   font-size: 0.8rem;
 }
+
+.blog__preview {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: no-wrap;
+}

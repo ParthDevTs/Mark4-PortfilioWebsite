@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog1| Parth Kathuria</title>
+    <title>Content Postioning| Parth Kathuria</title>
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="blogs.css" />
   </head>
@@ -19,58 +19,88 @@
       </span>
     </nav>
     <main class="main">
-      <h1 class="main__heading">Dummy Blog1</h1>
+      <h1 class="main__heading">Centering using CSS</h1>
       <div class="paragraph">
-        <p class="main__content">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione ex
-          omnis est et, voluptatibus quod harum laboriosam eos neque odit facere
-          nemo repudiandae, a fuga? Aliquam, labore! Amet, quam eos? Quibusdam,
-          ab recusandae. Ut vero maxime ipsam autem perferendis laudantium nisi
-          libero, est quos voluptatem unde alias eaque ipsum similique omnis
-          nostrum dolorum, sit sunt ipsa qui nesciunt. Soluta, nesciunt? Ab
-          sequi commodi quas amet quos quisquam dolore pariatur eius, dolores
-          aut a officia eum ratione at eaque quis, fuga voluptatibus porro quod
-          laudantium ipsum adipisci error. Cupiditate, perferendis autem! Ipsum,
-          impedit molestias. Voluptates numquam necessitatibus sapiente deleniti
-          natus eligendi nam, culpa earum laudantium, quaerat exercitationem
-          nulla sint pariatur molestias expedita impedit labore nostrum facere
-          reiciendis repudiandae excepturi non officia? Eius amet, impedit,
-          accusamus eveniet consequuntur dolorum rerum repudiandae cum eligendi
-          aliquid laudantium! Voluptates laborum molestiae sunt illo ipsa a
-          rerum voluptatum recusandae ut veniam illum aliquid, non error odit?
-        </p>
-        <br />
-        <br />
-        <h3>Sub Heading</h3>
-        <br />
-        <p class="main__content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-          blanditiis, labore rem dolorum cupiditate, animi dolore voluptates
-          neque ut enim eum voluptatum alias quasi, veniam rerum repudiandae
-          modi iure maxime?
+        <div class="main__content">
+          <p class="start-note">
+            There are many ways to position content inside a container in CSS.
+            We can achieve this using multiple way, which are as follows:
+          </p>
+          <br />
+          <h3>Using Transform-Translate</h3>
+          <p>
+            Using THE "OG" WAY i.e Transform, this guarantees that you text is
+            in the center of the container, no matter what.
+            <br />
+            It is a primitive way to handle positioning but as they say, OLD IS
+            GOLD. This method might get the job done but its least FLEX-ible(pun
+            intended).
+          </p>
+          <div class="code__snippet snippet1">
+            <img class="code" src="./blogs assets/code 1.PNG" alt="" />
+          </div>
+          <p>
+            Here,
+            <code>.any-content</code> is the target class which you want to
+            position in the center of the container. Making it
+            <code>position: absolute;</code> guarantees that our transformation
+            works but be careful with it.
+            <br />
+            Lastly, adding <code>top:50%;</code> and <code>left:50%;</code> to
+            force the element to be in center of container no matter what the
+            size of the screen. and then the icing on the cake
+            <code>transform: translate(-50%,-50%);</code> to adjust for element
+            height and width
+          </p>
+
           <br />
           <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum
-          possimus repellat esse maxime aut rem quaerat, cum consequatur
-          officiis odio est totam dignissimos fugiat odit, veniam sequi dicta
-          minus. Libero exercitationem non impedit odit dolorum officia
-          voluptate dignissimos commodi debitis illum vel aliquid voluptatem,
-          autem veritatis placeat doloribus nesciunt, sit temporibus, saepe
-          facere tempora assumenda ratione at magni? Veritatis. Incidunt quam
-          amet nisi minus vel neque odit temporibus dolor quo! Repudiandae, nam
-          provident eligendi totam sit ullam incidunt nobis debitis cupiditate
-          cum illo dolore quod similique modi eaque molestias. Omnis accusamus,
-          eius minima animi ad porro labore alias laborum facilis nisi ullam
-          consequuntur commodi similique et odio sapiente soluta beatae
-          officiis. Laboriosam ut autem magni at cum. Saepe, quibusdam? Atque
-          perferendis at ex sequi nobis porro, beatae asperiores repudiandae.
-          Placeat totam aliquam assumenda nostrum facere ipsam rerum eius
-          deleniti optio sint, repellendus veniam quis unde alias mollitia velit
-          dolor! Deserunt labore nulla saepe pariatur ab, dolorem tenetur
-          possimus quae provident itaque eum hic mollitia quaerat voluptatem
-          placeat veritatis ex doloremque officia harum architecto? Soluta
-          veniam assumenda vero enim veritatis.
-        </p>
+          <h3>Using Flex</h3>
+
+          <p>
+            This is a more user-friendly approach where instead of element, you
+            manipulate your container itself. Using this method makes your
+            container a flexbox and then you can make all elements in a
+            container behave a certain way.
+          </p>
+          <div class="code__snippet snippet1">
+            <img class="code" src="./blogs assets/code 2.PNG" alt="" />
+          </div>
+          <p>
+            Here <code>display:flex;</code> is used to make your container a
+            flexbox and then you can add direction of flexbox as
+            <code>flex-direction:row;</code> or
+            <code>flex-direction: column;</code> for simplicity, i will use
+            <code>flex-direction: column;</code>.
+
+            <br />
+
+            After configuring direction, just add
+            <code>align-items: center;</code> and
+            <code>justify-content: center;</code> and voila!, you have made all
+            of your content align to center by default and it's more Responsive.
+            <br /><br />
+            <b>Note</b>: <code>display: flex;</code> has some more
+            Functionalities which can be quite handy but are beyond the scope of
+            this topic so you might want to check this space for more such
+            content :D
+          </p>
+
+          <div class="end__notes">
+            <div class="gif__container col-md-6">
+              <img
+                class="gif"
+                src="./blogs assets/office gif.gif"
+                alt="gif of micheal dancing
+              "
+              />
+            </div>
+            <div class="end-note">
+              So, there you have it! Two easy ways to make your content
+              responsive and allign to center. Happy Coding!
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <footer class="footer">

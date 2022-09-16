@@ -5,6 +5,7 @@
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
+
 .navbar {
   width: 100%;
   background-color: black;
@@ -229,7 +230,7 @@ section .aboutme {
   section {
     font-size: 0.8rem;
     width: 600px;
-    padding: 3rem;
+    padding: 1rem 3rem 1rem 3rem;
   }
   section h3 {
     font-size: 1rem;
